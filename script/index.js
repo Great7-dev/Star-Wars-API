@@ -8,7 +8,7 @@ const fetchData = async()=>{
        
         let {name, gender, height}= results[i];
        
-        let imgPath = `/week-1-task-api-Great7-dev/images/character${i}.jpg`;
+        let imgPath = `../images/character${i}.jpg`;
         document.getElementById('rows').innerHTML += `<main class="col-lg-3 col-sm-6">
         <img
           src= ${imgPath}
@@ -33,7 +33,7 @@ const fetchData = async()=>{
           <div class="centered1">
           
           <button onclick = "closeButton(${i})">X</button>
-            <img src="/week-1-task-api-Great7-dev/images/character${i}.jpg" width="300px" height="500px" />
+            <img src="../images/character${i}.jpg" width="300px" height="500px" />
             
             <ul class="no-bullets">
                 <li>Name: ${name}</li>

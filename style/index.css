@@ -13,14 +13,16 @@ html {
   text-shadow: 0px 5px 10px;
 }
 body{
-  background: url("/week-1-task-api-Great7-dev/wp3614506.webp");
+  background: url("../images/wp3614506.webp") no-repeat center center fixed;
   width: 100vw; 
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  
+}
 .container .rows main img{
   width:5rem;
   height:5rem;
@@ -71,17 +73,22 @@ body{
   width:0;
   height:100%;
   vertical-align:middle;
+
 }
 
 ul.no-bullets {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  margin: 0;
 }
 
 .img-responsive {
   margin: 8px;
   transition: 0.5s ease;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
 }
 
 .footer_note{
@@ -101,6 +108,7 @@ ul.no-bullets {
 
 .btn-info,
 ul.no-bullets {
+  
   transition: 0.5s ease-in-out;
   letter-spacing: 2px;
   font-family: monospace;
@@ -109,6 +117,8 @@ ul.no-bullets {
 }
 
 .row{
+  display: flex;
+  flex-wrap: wrap;
   height: auto;
   width: 100%;
 }
